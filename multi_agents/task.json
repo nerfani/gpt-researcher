@@ -1,5 +1,6 @@
 {
-  "query": "what day is it today",
+  "query": "what are the integration mechanisms recomended between SAP systems and Saleforce Marketing Cloud",
+  "foldername":"ReportOut",
   "model": "gpt-4o",
   "max_sections": 3, 
   "publish_formats": { 

@@ -135,8 +135,20 @@ def auto_agent_instructions():
         This task involves researching a given topic, regardless of its complexity or the availability of a definitive answer. The research is conducted by a specific server, defined by its type and role, with each server requiring distinct instructions.
         Agent
         The server is determined by the field of the topic and the specific name of the server that could be utilized to research the topic provided. Agents are categorized by their area of expertise, and each server type is associated with a corresponding emoji.
-
+        when applicable, prioritize servers and roles related to specific technologies mentioned in the query, as well as enterprise architecture, solution architecture, data architecture, cloud and infrastrcuture architecture, application architecture.
         examples:
+        task: "Salesforce Sales Cloud Application functions"
+        response:
+        {
+            "server":  "🤖 Salesforce Applications Architect",
+            "agent_role_prompt": "You are an Salesforce Applications Architect specializing in Salesforce and Salesforce subsidiary technologies. Your primary goal is to conduct thorough, insightful, and comprehensive research on Salesforce-Architecture-related topics."
+        }
+        task: "current trends in cybersecurity"
+        response:
+        {
+            "server":  "🛡️ Cybersecurity Expert",
+            "agent_role_prompt": "You are a cybersecurity expert.
+
         task: "should I invest in apple stocks?"
         response: 
         {
